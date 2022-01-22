@@ -1,0 +1,22 @@
+{
+    "name": "authree/qiyu-tool",
+    "description": "tool.",
+    "type": "library",
+    "require-dev": {
+        "php": "5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "qiyu",
+            "email": "yiyanjyx@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "authree\\qiyu-tool\\": "src/"
+        }
+    }
+}
