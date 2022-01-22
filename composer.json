@@ -16,7 +16,13 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "authree\\qiyu-tool\\": "src/"
+            "encrypt\\": "src/encrypt/",
+            "makepass\\": "src/makepass/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tests\\": "tests/"
         }
     }
 }
