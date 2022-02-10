@@ -2,9 +2,6 @@
     "name": "authree/qiyu-tool",
     "description": "tool.",
     "type": "library",
-    "require-dev": {
-        "php": "5.6"
-    },
     "license": "MIT",
     "authors": [
         {
@@ -12,17 +9,11 @@
             "email": "yiyanjyx@163.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
             "encrypt\\": "src/encrypt/",
             "makepass\\": "src/makepass/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "tests\\": "tests/"
         }
     }
 }
