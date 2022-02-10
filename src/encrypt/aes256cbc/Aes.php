@@ -1,5 +1,5 @@
 <?php
-namespace encrypt\aes256cbc;
+namespace authree\qiyu\encrypt\aes256cbc;
 
 class Aes
 {

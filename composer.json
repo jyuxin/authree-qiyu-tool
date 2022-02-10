@@ -15,8 +15,8 @@
     },
     "autoload": {
         "psr-4": {
-            "encrypt\\": "src/encrypt/",
-            "makepass\\": "src/makepass/"
+            "authree\\qiyu\\": "src",
+            "tests\\": "tests"
         }
     }
 }

@@ -1,7 +1,7 @@
 <?php
 namespace tests;
 
-use makepass\Utils;
+use authree\qiyu\makepass\Utils;
 
 class MakepassTest
 {

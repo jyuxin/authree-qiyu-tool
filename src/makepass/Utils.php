@@ -1,5 +1,5 @@
 <?php
-namespace makepass;
+namespace authree\qiyu\makepass;
 
 class Utils
 {

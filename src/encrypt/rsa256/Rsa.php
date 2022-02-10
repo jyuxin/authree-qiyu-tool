@@ -1,5 +1,5 @@
 <?php
-namespace encrypt\rsa256;
+namespace authree\qiyu\encrypt\rsa256;
 
 /**
  * RSA 公钥 私钥加密 解密

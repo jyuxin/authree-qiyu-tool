@@ -1,8 +1,8 @@
 <?php
 namespace tests;
 
-use encrypt\aes256cbc\Aes;
-use encrypt\rsa256\Rsa;
+use authree\qiyu\encrypt\aes256cbc\Aes;
+use authree\qiyu\encrypt\rsa256\Rsa;
 
 class EncryptTest
 {
@@ -15,9 +15,9 @@ class EncryptTest
 
         $obj = new Aes($key,$iv);
 
-        $pass = $obj->encrypt($textStr); // 加密
+        $pass = base64_encode($obj->encrypt($textStr)); // 加密
 
-        $text = $obj->decrypt($textStr); // 解密
+        $text = $obj->decrypt(base64_decode($pass)); // 解密
 
         echo $pass; // 密文
         echo $text; // 明文
