@@ -16,7 +16,7 @@
     "autoload": {
         "psr-4": {
             "authree\\qiyu\\": "src",
-            "tests\\": "tests"
+            "authree\\qiyu\\tests\\": "tests"
         }
     }
 }

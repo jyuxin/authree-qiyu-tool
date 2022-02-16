@@ -1,5 +1,5 @@
 <?php
-namespace tests;
+namespace authree\qiyu\tests;
 
 use authree\qiyu\encrypt\aes256cbc\Aes;
 use authree\qiyu\encrypt\rsa256\Rsa;
