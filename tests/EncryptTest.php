@@ -2,6 +2,7 @@
 namespace authree\qiyu\tests;
 
 use authree\qiyu\encrypt\aes256cbc\Aes;
+use authree\qiyu\encrypt\aes\Aes as Aesprng;
 use authree\qiyu\encrypt\rsa256\Rsa;
 
 class EncryptTest
@@ -46,5 +47,21 @@ class EncryptTest
 
         echo $pass; // 密文
         echo $text; // 明文
+    }
+
+    public function aes_sha1prng()
+    {
+        $key = '';
+
+        $textStr = '123456';
+
+        $obj = new Aesprng($key);
+
+        $pass = base64_encode($obj->encrypt($textStr)); // 加密
+
+        $text = $obj->decrypt(base64_decode($pass)); // 解密
+
+        echo $pass . PHP_EOL; // 密文
+        echo $text . PHP_EOL; // 明文
     }
 }
